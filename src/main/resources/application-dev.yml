@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: gateway-dev
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+#      routes:
+#        - id: product-service-routes
+#          uri: lb://PRODUCT-SERVICE-DEV/ #
+#          predicates:
+#            - Path=/product-service/**
+server:
+  port: 8079
+eureka:
+  instance:
+    prefer-ip-address: true
